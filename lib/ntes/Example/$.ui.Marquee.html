@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>$.ui.Marquee</title>
+<style type="text/css">
+<!--
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border: 1px solid #000;
+}
+
+.verticalContent {
+	width: 693px;
+	height: 120px;
+	padding: 15px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+	.verticalContent div {
+		height: 100%;
+		overflow: hidden;
+	}
+		.verticalContent div div {
+			width: 4000px;
+			height: 4000px;
+		}
+			.verticalContent div div ul {
+				padding-top: 10px;
+				height: 122px;
+				overflow: hidden;
+			}
+			.verticalContent div div ul li {
+				float: left;
+				padding-right: 15px;
+			}
+
+.horizontalContent {
+	width: 693px;
+	padding: 15px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+	.horizontalContent div {
+		width: 100%;
+		overflow: hidden;
+	}
+		.horizontalContent div div {
+			width: 4000px;
+		}
+			.horizontalContent div div ul {
+				float: left;
+			}
+				.horizontalContent div div ul li {
+					float: left;
+					padding-right: 15px;
+				}
+					
+-->
+</style>
+</head>
+
+<body>
+<div class="horizontalContent">
+    <div>
+        <div>
+            <ul id="manualScroll">
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="font-size: 16px; text-align: center; margin-bottom: 2em;"><a href="###" onclick="manualScroll.start(177, 'left');">左</a> <a href="###" onclick="manualScroll.start(177, 'right');">右</a></div>
+
+<div class="horizontalContent">
+    <div>
+        <div>
+            <ul id="scrollL">
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="font-size: 16px; text-align: center; margin-bottom: 2em;"><a href="###" onclick="scrollL.speedUp();">加速</a> <a href="###" onclick="scrollL.slowDown();">减速</a></div>
+
+<div class="horizontalContent" id="scroll2">
+    <div>
+        <div>
+            <ul id="scrollR">
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="verticalContent">
+    <div>
+        <div>
+            <ul id="scrollT">
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="verticalContent">
+    <div>
+        <div>
+            <ul id="scrollB">
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/20081217091215f9553.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/auto/2008/12/17/20081217091911ccdb7.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/cnews/2008/12/17/200812170747219a3a6.jpg" alt="标题" /></a></li>
+                <li><a href="#"><img src="http://img2.cache.netease.com/mobile/2008/12/17/key_1602.jpg" alt="标题" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript" src="ntes_jslib_1.x.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript" src="ntes_jslib_ui_0.x.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var manualScroll = new NTES.ui.Marquee($("#manualScroll"), "left", 10, 3);
+
+var scrollL = new NTES.ui.Marquee($("#scrollL"), "left");
+scrollL.start();
+
+var scrollR = new NTES.ui.Marquee($("#scrollR"), "right");
+scrollR.start();
+$("#scroll2").addEvent("mouseout", function() { scrollR.go(); });
+$("#scroll2").addEvent("mouseover", function() { scrollR.stay(); });
+
+
+var scrollT = new NTES.ui.Marquee($("#scrollT"), "top");
+scrollT.start();
+
+var scrollB = new NTES.ui.Marquee($("#scrollB"), "bottom");
+scrollB.start();
+//]]>
+</script>
+
+</body>
+</html>

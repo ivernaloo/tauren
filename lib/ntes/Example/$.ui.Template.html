@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>$.ui.Template</title>
+</head>
+
+<body>
+<div id="templates">
+	
+    <div title="test1"><!--
+    	<#=a#> AND <#=b#>
+    --></div>
+    
+    <div title="test2"><!--
+    <#
+    	for (var i = 0, len = arr.length; i < len; i++) {
+    		if (0 == i % 2) {
+    #>
+   		<strong><#=arr[i]#></strong>
+    <#
+    		} else {
+    #>
+    	<em><#=arr[i]#></em>
+    <#
+    		}
+    	}
+    #> --></div>
+    
+</div>
+<div id="output"></div>
+<script language="javascript" type="text/javascript" src="ntes_jslib_1.x_src.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript" src="ntes_jslib_ui_0.x_src.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+		   
+// 初始化
+NTES.ui.Template.load();
+		   
+$("#output").innerHTML =NTES.ui.Template.parse("test1", { a : 1, b : 2 });
+$("#output").innerHTML += NTES.ui.Template.parse("test2", { arr : [1, 2, 3, 4, 5] });
+//]]>
+</script>
+</body>
+</html>

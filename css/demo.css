@@ -1,0 +1,5 @@
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+.photoList{zoom:1;}.photoList:after{content:" ";display:block;height:0;clear:both;visibility:hidden;}
+.photoList li{float:left;_display:inline;}
+.photoList li{width:100px;height:100px;margin-right:5px;overflow:hidden;}.photoList li img{width:auto;max-width:none;}

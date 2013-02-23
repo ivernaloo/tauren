@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tauren---用"战争践踏"踏平一切麻烦和Bug---</title>
+    <!--#include virtual="/inc/cssNav.html"-->
+</head>
+<body>
+<!--#include virtual="/inc/menu.html"-->
+<div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1>繁琐, BUG ?</h1>
+        <p>敏捷开发的时代：</p>
+        <p>还在不停的做重复的事情？</p>
+        <p>还在不停调试Bug？</p>
+        <p>还在被越来越复杂交互卡住？</p>
+        <p>来自莫高雷.血蹄村的Tauren吧，集合了常见模块，交互效果，Bug大补帖。用Tauren的“战争践踏”让无尽的繁琐和Bug见鬼去吧!</p>
+        <a class="btn btn-primary btn-large">Tauren之旅 »</a>
+    </div>
+</div>
+<!--#include virtual="/inc/bottomNav.html"-->
+<!--#include virtual="/inc/jsNav.html"-->
+</body>
+</html>

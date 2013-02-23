@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>$.ui.PopupLayer</title>
+<style type="text/css">
+<!--
+body {
+	background: #fff;
+}
+
+.wrapper {
+	position: relative;
+}
+	.wrapper .content {
+		width: 300px;
+		height: 200px;
+		position: absolute;
+		border: 1px solid #000;
+		display: none;
+		z-index: 999;
+		left: 2em;
+		top: 1.5em;
+		background: #000;
+		color: #fff;
+	}
+-->
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="menu" id="menu">点击显示</div>
+    <div class="content" id="content">移出隐藏</div>
+</div>
+<script language="javascript" type="text/javascript" src="ntes_jslib_1.x.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript" src="ntes_jslib_ui_0.x.js" charset="gb2312"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+new $.ui.PopupLayer($("#menu"), $("#content"), "click");
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tauren---用"战争践踏"踏平一切麻烦和Bug---</title>
+    <!--#include virtual="/inc/cssNav.html"-->
+</head>
+<body>
+<!--#include virtual="/inc/menu.html"-->
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+
+                    <li class="nav-header">布局</li>
+                    <li><a target="preview" href="solutions/1.html">两列右侧自适应布局</a></li>
+                    <li><a target="preview" href="solutions/2.html">两列左侧自适应布局</a></li>
+                    <li><a target="preview" href="solutions/3.html">两列定宽布局</a></li>
+                    <li><a target="preview" href="solutions/4.html">三列左侧自应布局</a></li>
+                    <li><a target="preview" href="solutions/5.html">三列右侧自应布局</a></li>
+
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="span10">
+            <iframe name="preview" class="preview_box"></iframe>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/inc/bottomNav.html"-->
+<!--#include virtual="/inc/jsNav.html"-->
+</body>
+</html>

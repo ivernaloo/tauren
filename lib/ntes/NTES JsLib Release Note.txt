@@ -1,0 +1,227 @@
+2010-7-30		1.2.5
+在$.util.parseTpl中添加容错处理，当模板为null时返回undefined，当values为空时返回模板内容。
+优化了各种样式操作。
+修正了$.event.fix在Opera下出现的异常。
+优化了浏览器检测的逻辑。
+在$.ajax.send的Ajax请求中增加X-Requested-With的header。 
+
+2010.04.26		1.2.4
+修复id选择器的一个BUG。
+修改Array.prototype.indexOf使其执行过程与ECMAScript中定义的一致。 
+
+2010.04.19		1.2.3
+大幅提高IE8、Firefox等浏览器下选择器引擎效率。
+
+2010.03.23		1.2.2
+$.ui.Slide添加delay参数。
+修复$扩展的BUG。
+
+2010.03.17		1.2.1
+修复了“+”选择器的BUG。
+
+2010.03.09		1.2.0
+从此版本开始，完全基于jRaiser开发，不做功能精简。
+添加两个获取节点的方法：$.one, $.all。
+选择器引擎的少量优化。
+添加三个新的元素扩展：get, hasClass, each。
+元素扩展$可以用于获取第n个扩展元素。
+addCss和removeCss扩展可以接受Object类型的参数。
+添加$.each/$.util.each，可以遍历数组或对象。
+添加$.parseTpl作为$.util.parseTpl的快速访问。
+添加$.ready/$.dom.ready，可以在DOM ready时执行指定代码。
+修改String.prototype.trim使其原型与ECMAScript第五版中定义的一致。 
+
+2009.11.19		1.1.6
+解决IE环境下辅助属性uniqueidforjess出现在innerHTML中的问题。
+attr扩展自动转换属性名，如class转换为className。
+
+2009.11.11		1.1.5
+$.ui.Slide增加showPrevious方法。
+添加$.retire、$.resume，用于解决多库冲突。
+
+2009.10.13		1.1.4
+设置Cookie时可以用带数字和单位的字符串作为参数。
+
+2009.10.10		1.1.3
+$.style.getCurrentStyle自动修正样式名。
+
+2009.09.25		1.1.2
+添加$.style.getCurrentStyle方法。
+
+2009.09.18		1.1.1
+提高选择器引擎效率。
+提高String.prototype.trim的效率。
+
+2009.09.09		1.1.0
+添加attr和removeEvent扩展。
+简写部分this为t，容易出现this错乱的地方使用全名。
+提高Css字符串的解释效率。
+$.cookie.get添加参数allowUndefined，决定是否允许返回undefined。
+清理testElem。
+
+2009.08.26		1.0.1
+避免过早获取document.documentElement/document.body/document.getElementsByTagName("head")。
+
+2009.08.24		1.0.0
+修正Ajax请求头的格式。
+
+2009.08.04		1.0.0 RC2
+修正选择器引擎去重复算法的错误。
+为$.util.parseTpl添加缓存模板功能。
+优化selector引擎，元素数量大于1时才执行去重复操作。
+$.ui.Slide类增加onStop事件。
+更改cookie对象内对encoder和decoder的引用方法，避免出现this错乱。
+精简某些if语句的写法。
+修正addEvent无返回值的错误。
+修正document.all[id]返回null时的错误。
+修正removeCss对多个类名操作时的BUG。
+改进模板引擎，使用更偏僻的变量名。
+防止重复加载。
+
+2009.06.16		1.0.0 RC
+对象名小写，例如 NTES.Util -> NTES.util 。
+优化$函数处理流程。
+优化选择器引擎的执行效率以及对XML的兼容性。
+添加$.style，addCss和removeCss的主要功能体归到$.style。
+修正对Css字符串的解析bug。
+addEvent主要功能体归到$.event。
+事件函数和事件对象经过兼容性处理，this指向元素本身，可使用return false取消默认事件执行。
+删除html元素、window对象、document对象下的each和toArray扩展。
+添加$.dom.eachNode方法和$.util.isArray方法。
+优化String.prototype.trim和Function.prototype.bind，去掉String.prototype.has。
+重写$.ui.Slide，增强其可扩展性。
+$.util.parseTpl改用John Resig的模板引擎。
+$.cookie的默认编码和解码函数改为encodeURIComponent和decodeURIComponent。
+
+2009.05.05		0.9.6.2
+修正window和document调用addEvent出现的错误。
+修正float样式名的兼容性，IE下是styleFloat，FF下是cssFloat。
+
+2009.04.27		0.9.6.1
+简化异常的抛出。
+改进selector引擎。
+添加each元素扩展，大幅度修改元素扩展的实现。
+Array.prototype.merge改为$.Util.merge，用于混合数组和类数组（不去重复）。
+
+2009.04.21		0.9.6
+提高String.prototype.trim的效率。
+提高$.Element.addEvent的效率。
+改进selector引擎。
+部分条件判断更改为===/!==。
+新增toArray变量，提高$.Util.toArray方法的内部访问速度。
+修正$.Ajax.send中的hasCompleted为局部变量。
+
+2009.04.16		0.9.5.6
+修正$函数属性选择符的BUG。
+用attributes代替getAttributeNode获取元素属性，兼容一些较低版本的浏览器。
+
+2009.04.14		0.9.5.5
+修正$函数在IE下对id和name识别错误的BUG。
+优化属性选择符的判断方式。
+优化子元素选择符的判断方式。
+
+2009.04.10		0.9.5.4
+修正Array.prototype.indexOf默认从第一个元素开始找的错误。
+修正$.Cookie.get的cookie名编码。
+
+2009.03.30		0.9.5.3
+修改Cookie的编码和解码函数为可设置项。
+
+2009.03.03		0.9.5.2
+修正了一些if判断。
+提高了Function.prototype.bind函数的执行效率。
+添加String.format方法。
+开放NTES.Util.extend方法。
+
+2009.02.20		0.9.5.1
+修正$函数对包含"-"的Id的识别错误。
+修正$.Util.parseTpl无法输出0等假值的BUG。
+修改$.Util.parseTpl没匹配到值时直接输出原来的虚拟变量表达式。
+
+2009.02.13		0.9.5
+修正SelectorAnalyzer对属性选择符的解析错误。
+修正$.UI.Slide对象调用show(0)方法时不执行的BUG。
+
+2009.02.10		0.9.4.1
+修正$.UI.Slide.setPlayMode(mode)函数中的变量名错误。
+提高了$.Util.toArray函数的执行效率。
+
+2009.02.02		0.9.4
+更改了isArray的判断范围：只判断是否数组。
+更改了$.Util.toArray：只把集合转换为数组。
+添加$.Element.toArray：用于把Html元素转换为数组。
+更改Array.prototype.merge接受的参数为仅限于数组。
+
+2009.01.22		0.9.3.4
+修正toArray函数对select元素的识别错误（select元素包含HtmlCollection的所有特征）。
+提高$函数对简单选择器的识别效率。
+修改$.Util.parseTpl函数在values为空的时候直接返回模板。
+改进$函数，避免重复扩展元素。
+修复IE下isArray和$对XML节点判断出错的BUG。
+修复IE下isArray对window对象判断出错的BUG。
+修复$函数使用属性选择符操作XML时的错误。
+
+2009.01.16		0.9.3.3
+更新为jQuery 1.3的浏览器判断。
+改进了isArray的判断方式。
+调整了$.Ajax.importJs的参数顺序。
+
+2009.01.15		0.9.3.2
+解决了SelectorAnalyzer.compareAttribute与Flashget插件冲突导致报错的问题。
+更改别名为NTES。
+修正$.Ajax.importJs在IE6下的BUG。
+
+2009.01.14		0.9.3.1
+添加$.Util.parseTpl函数。
+
+2009.01.12		0.9.3
+调整了Function.prototype.bind的代码。
+优化了$.Ajax.send。
+调整了isArray的判断方式。
+提高了removeCss的容错性和addEvent的效率。
+增强了$函数对类名选择符的识别能力。
+添加$.UI以及$.UI.Slide。
+优化了$函数的属性选择符。
+
+2008.12.26		0.9.2
+修改了Array.prototype.indexOf，可以指定开始搜索的位置。
+删除了不常用的Array.prototype.remove。
+修改了$函数，允许返回0长度的元素数组，优先选择context参数为上下文。
+删除了不常用的$.Element.toggleCss方法。
+重写了CssAnalyzer，增强对Css的识别能力。
+简化了removeCss函数的实现。
+把创建XmlHttpRequest的过程独立为一个函数$.Ajax.createXhr。
+为$.Ajax.send函数添加了xhr参数，可以指定使用的XmlHttpRequest对象。
+
+2008.12.23		0.9.1
+去掉了不常用的$.Ajax.importCss方法。
+添加了事件属性兼容处理模块。
+修正了$.Cookie.get函数少取一个字符的错误。
+
+2008.11.24		0.9.0
+修正removeCss中的一个错误。
+修正$函数在使用*查询时的一个错误。
+
+2008.10.30		0.8.9
+修正了$函数找不到元素的检测错误。
+添加了!=(不等于)属性选择符。
+修正了属性操作符的判断错误。
+反编码读取到的Cookie值。
+
+2008.10.16		0.8.8
+修正了CSS的识别错误。
+更改了版本标识的位置。
+
+2008.10.10		0.8.7
+修改了$.Cookie.get函数的实现，并删掉多余的RegExp.escape函数。
+简化了CssAnalyzer的实现。
+
+2008.10.07		0.8.6
+修正了$函数的一个错误。
+显著提高$函数的执行效率。
+优化了String.prototype.has的执行效率。
+优化了removeCss、toggleCss的执行效率。
+修正一些错误的注释。
+修正了一些条件判断语句中的潜在错误。
+删除了String.isNullOrEmpty函数。
+修改了$.Cookie.set的类型判断。

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="js/editor.js"></script>
+    <script type="text/javascript" src="js/editorExtend.js"></script>
+    <script type="text/javascript" src="js/editor.view.js"></script>
+    <link rel="stylesheet" href="css/editor.v1.0.0.css"/>
+</head>
+<body>
+<div id="divComposeEditor">
+
+</div>
+<script type="text/javascript">
+
+    var oEditor = new EditorView({
+        editorDiv:"#divComposeEditor",
+        toolbar:{
+            basic:["bold","italic","underline","fontsize", "forecolor","backcolor",
+                "justify","list","indent","link","bbsformat","portrait","bbsimage","bbsvideo","bbshtml","bbstcard", "bbs9box"],
+            full:["undo","cut","copy","fontname","fontsize","justify","list","indent","lineheight","link","bbsformat","portrait","bbsimage","bbsvideo","bbshtml","bbstcard",
+                "redo","paste","bold","italic","underline","forecolor","backcolor","insertHorizontalRule","insertTime",
+                "removeFormat","insertTable"],
+            fullTBWidth:{ie:510,other:465}
+        },
+        html:''
+    });
+    EditorExtend.addListener(oEditor);  // bind common event
+    EditorExtend.addPostListener(oEditor);  // bind the post event
+    (function() {
+        setInterval(function() {
+            // 编辑器为空或者没有输入的时候不保存内容
+            var content = oEditor.editor.getContent().replace(/^<br>\s*$|^\s*$|^<DIV><\/DIV>$|^<P>&nbsp;<\/P>$/, '');
+            if(content) {
+                localStorageAdapter.set('bbs_content_autosave', content);
+            }
+        }, 30*1000);
+    })();
+</script>
+</body>
+</html>

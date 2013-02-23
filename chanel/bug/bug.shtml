@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tauren---用"战争践踏"踏平一切麻烦和Bug---</title>
+    <!--#include virtual="/inc/cssNav.html"-->
+</head>
+<body>
+<!--#include virtual="/inc/menu.html"-->
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+
+                    <li class="nav-header">布局</li>
+                    <li><a target="preview" href="solutions/equal-height-layout/equal-height-layout.html">多列等高布局</a></li>
+                    <li class="nav-header">html</li>
+                    <li><a target="preview" href="solutions/placeholder/placeholder.html">placeholder</a></li>
+                    <li><a target="preview" href="solutions/pngFix/pngFix.html">pngFix</a></li>
+
+
+
+
+
+                    <li class="nav-header">跨浏览器</li>
+                    <li><a target="preview" href="solutions/cross-browers-copy/cross-browers-copy.html">跨浏览器拷贝</a></li>
+                    <li class="nav-header">IE6/7</li>
+                    <li><a target="preview" href="solutions/ie-z-index-bug/ie-z-index-bug.html">IE z-index</a></li>
+                   <!-- <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中绝对定位位置错乱</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中绝对定位在奇数宽高容器中的right和bottom的问题</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中绝对定位元素在浮动元素前后消失的问题</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中浮动块级元素的margin双倍</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中浮动引起的3px的bug</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE6中下表单元素向右偏离的bug</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE67中图片链接点击无效的bug</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">IE67中相对定位的元素在有滚动条的容器里会固定不动且溢出</a></li>
+-->
+                    
+                    
+
+
+                    
+                    <li class="nav-header">iframe</li>
+                    <li><a target="preview" href="solutions/cross-domain-iframe/index.html" target="preview">iframe自适应内部高度</a></li>
+
+                    <li class="nav-header">css</li>
+                    <li><a target="preview" href="solutions/font-face/font-face.html" target="preview">自定义字体</a></li>
+                    <li><a target="preview" href="solutions/float-center/float-center.html" target="preview">居中浮动</a></li>
+                    <li><a target="preview" href="solutions/force-wrap/force-wrap.html" target="preview">强制换行</a></li>
+                    <li><a target="preview" href="solutions/vertical-horizoncal/vertical-horizoncal.html">水平垂直居中</a></li>
+                    <li><a target="preview" href="solutions/select-mask/select-mask.html">select遮挡mask</a></li>
+
+
+                    <li class="nav-header">HTML5</li>
+                    <li><a target="preview" href="solutions/geolocation/geolocation.html" target="preview">gelocation</a></li>
+                    <li><a target="preview" href="solutions/localStorage/localStorage.html" target="preview">localstorage</a></li>
+                    <li class="nav-header">other</li>
+
+                    <li><a target="preview" href="solutions/detect-chinese/detect-chinese.html" target="preview">检测中文</a></li>
+
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="span10">
+            <iframe name="preview" class="preview_box"></iframe>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/inc/bottomNav.html"-->
+<!--#include virtual="/inc/jsNav.html"-->
+</body>
+</html>

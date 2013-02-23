@@ -1,0 +1,33 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>三列右侧自适应布局</title>
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/function.css" type="text/css" rel="stylesheet">
+
+    <style type="text/css">html{_overflow-y:scroll;}/* 三列右侧自适应布局 */
+    .g-bd3{min-width:430px;margin:0 0 10px;}
+    .g-sd31,.g-sd32{position:relative;float:left;width:230px;}
+    .g-sd31{width:190px;margin-right:10px;}
+    .g-mn3{float:right;width:100%;margin-left:-430px;}
+    .g-mn3c{margin-left:440px;}
+        /* 预览辅助样式 */
+    body{margin:10px;}
+    p{height:150px;padding:10px;color:#fff;background:#ff0097;}
+    .g-sd31 p{background:#e51400;}
+    .g-sd32 p{background:#4eb3b9;}</style></head>
+<body>
+<div id="scroller"><div class="g-bd3 f-cb">
+    <div class="g-sd31">
+        <p>左侧定宽</p>
+    </div>
+    <div class="g-sd32">
+        <p>左侧定宽</p>
+    </div>
+    <div class="g-mn3">
+        <div class="g-mn3c">
+            <p>右侧自适应</p>
+        </div>
+    </div>
+</div>
+</div>
+</body></html>

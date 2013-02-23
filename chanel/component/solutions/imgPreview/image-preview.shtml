@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <!--#include virtual="/inc/demoCss.html"-->
+</head>
+<body>
+<ul class="photoList">
+    <li>
+        <a href="/photo/452741/1/-3894876766165722082" class="profile-photo" >
+            <img data-size="110" class="js-preview-img" src="img/1.jpg" data-move="true" data-direction="y" data-diff-max="-55">
+        </a>
+    </li>
+    <li>
+        <a href="/photo/452741/1/-815849869133629081" class="profile-photo" style="text-align: center;">
+            <img data-size="110" class="js-preview-img" src="img/2.jpg" data-move="true" data-direction="y" data-diff-max="-55">
+        </a>
+    </li>
+    <li>
+        <a href="/photo/452741/1/7439609572532787844" class="profile-photo">
+            <img data-size="110" class="js-preview-img" src="img/3.jpg" data-move="true" data-direction="x" data-diff-max="-55">
+        </a>
+    </li>
+    <li>
+        <a href="/photo/452741/1/3718570673877407300" class="profile-photo">
+            <img data-size="110" class="js-preview-img" src="img/4.jpg" data-move="true" data-direction="x" data-diff-max="-37">
+        </a>
+    </li>
+    <li>
+        <a href="/photo/452741/1/-1334396453617640085" class="profile-photo">
+            <img data-size="110" class="js-preview-img" src="img/5.jpg" data-move="true" data-direction="x" data-diff-max="-37">
+        </a>
+    </li>
+</ul>
+<!--#include virtual="/inc/demoJqueryJs.html"-->
+<script type="text/javascript" src="js/preview.js"></script>
+</body>
+</html>

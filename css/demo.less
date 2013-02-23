@@ -1,0 +1,31 @@
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+@import "global.less";
+
+.list(){
+  .clear;
+  li {
+    .left;
+  }
+}
+.w(@w) {
+  width: @w;
+}
+.h(@h) {
+  height: @h;
+}
+
+/* photo list preview */
+.photoList {
+  .list;
+  li {
+    .w(100px);
+    .h(100px);
+    margin-right: 5px;
+    overflow: hidden;
+    img {
+      width: auto;
+      max-width: none;
+    }
+  }
+}

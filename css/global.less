@@ -1,0 +1,22 @@
+.left() { float:  left; _display: inline; }
+.right() { float: right; _display: inline; }
+
+.clear() {
+
+  &:after{
+    content:" ";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+  zoom:1;
+}
+
+.opacity (@opacity) {
+  opacity: @opacity;
+  -ms-filter: ~`"progid:DXImageTransform.Microsoft.Alpha(Opacity=" + "@{opacity}" * 100 + ")"`;
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+  filter: ~`"alpha(opacity=" + "@{opacity}" * 100 + ")"`;
+}
+
